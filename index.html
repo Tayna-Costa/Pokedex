@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Dobrável</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="pokedex-container">
+        <div class="pokedex-panel left-panel">
+            <div class="panel-header">
+                <div class="panel-lights">
+                    <div class="light red"></div>
+                    <div class="light yellow"></div>
+                    <div class="light green"></div>
+                </div>
+                <h1 class="panel-title">POKÉDEX</h1>
+            </div>
+            <div class="panel-screen">
+                <input type="text" id="pokemon-catalog-search" placeholder="Buscar Pokémon..." class="pokedex-input">
+                <div class="pokemon-catalog-list-wrapper">
+                    <ul id="pokemon-catalog-list">
+                        <li class="catalog-item">#001 - Bulbasaur</li>
+                        <li class="catalog-item">#002 - Ivysaur</li>
+                        <li class="catalog-item">#003 - Venusaur</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="panel-buttons">
+                <button class="control-button green-button"></button>
+                <button class="control-button blue-button"></button>
+            </div>
+        </div>
+
+        <div class="pokedex-hinge">
+            <div class="hinge-light big-blue"></div>
+            <div class="hinge-light small-red"></div>
+            <div class="hinge-light small-yellow"></div>
+            <div class="hinge-light small-green"></div>
+        </div>
+
+        <div class="pokedex-panel right-panel">
+            <div class="panel-header">
+                <div class="panel-lights">
+                    <div class="light red"></div>
+                    <div class="light yellow"></div>
+                    <div class="light green"></div>
+                </div>
+                </div>
+            <div class="panel-screen details-screen">
+                <h2 id="detail-pokemon-name">Selecione um Pokémon</h2>
+                <img id="detail-pokemon-image" src="" alt="Pokémon" class="detail-image" style="display: none;">
+
+                <div class="detail-group">
+                    <p id="detail-pokemon-id">ID: </p>
+                    <p id="detail-pokemon-height">Altura: </p>
+                    <p id="detail-pokemon-weight">Peso: </p>
+                </div>
+
+                <div class="detail-group types-group" id="detail-pokemon-types">
+                    </div>
+
+                <div class="detail-group stats-group" id="detail-pokemon-stats">
+                    <h3 class="group-title">Estatísticas Base</h3>
+                    </div>
+
+                <div class="detail-group abilities-group" id="detail-pokemon-abilities">
+                    <h3 class="group-title">Habilidades</h3>
+                    </div>
+
+                <p id="initial-message" class="initial-message">Clique em um Pokémon na lista ao lado!</p>
+            </div>
+            <div class="panel-buttons">
+                <button class="control-button direction-pad up"></button>
+                <button class="control-button direction-pad down"></button>
+                <button class="control-button action-button a-button">A</button>
+                <button class="control-button action-button b-button">B</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
