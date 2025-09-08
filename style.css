@@ -50,7 +50,7 @@
     --type-dark: #705746;
 }
 .catalog-item.selected {
-    background-color: #ffcb05;
+    background-color: #7AC74C;
     font-weight: bold;
 }
 /* --- Base e Resets --- */
@@ -667,4 +667,5 @@ body {
     .detail-group p, .stats-group .stat-item span, .abilities-group li {
         font-size: 0.8em;
     }
+
 }
